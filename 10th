@@ -1,0 +1,15 @@
+# 학생의 이름, 수학 점수, 평균 점수를 입력받습니다.
+student_name = input("학생의 이름을 입력하세요: ")
+math_score = float(input(f"{student_name}의 수학 점수를 입력하세요: "))
+average_score = float(input("평균 점수를 입력하세요: "))
+
+# 수학 점수와 평균 점수를 비교하여 결과를 출력합니다.
+if math_score > average_score:
+    result = "잘함"
+elif math_score == average_score:
+    result = "보통"
+else:
+    result = "노력요함"
+
+# 결과를 출력합니다.
+print(f"{student_name}: {result}")
